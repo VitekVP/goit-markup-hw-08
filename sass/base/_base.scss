@@ -1,0 +1,17 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+
+  color: var(--primary-text-color);
+  background-color: var(--basic-white-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-title);
+}

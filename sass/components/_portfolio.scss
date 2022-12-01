@@ -1,0 +1,25 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+  --items: 3;
+}
+
+.portfolio-list__item {
+  max-height: 404px;
+  flex-basis: calc((100% - (var(--items) - 1) * var(--indent))) / var(--items);
+
+  transition-property: box-shadow;
+  transition-duration: var(--anim-time);
+  transition-timing-function: var(--anim-ft);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+  }
+}
+
+.portfolio-list__item:hover .project__overlay {
+  transform: translateY(0);
+}

@@ -1,0 +1,15 @@
+.section {
+  @include section;
+}
+
+.section--not-padding {
+  @include section(0, 94px);
+}
+
+.section--dark {
+  background-color: var(--secondary-bgc);
+}
+
+.section__title {
+  margin-bottom: 50px;
+}

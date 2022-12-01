@@ -1,0 +1,41 @@
+.footer {
+  padding: 60px 0;
+
+  line-height: calc(21 / 14);
+
+  background-color: var(--hero-footer-bgc);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--basic-white-color);
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__socials {
+  margin-right: 93px;
+}
+
+.footer__subscription {
+  flex-grow: 1;
+}

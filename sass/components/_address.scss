@@ -1,0 +1,22 @@
+.address__link {
+  font-style: normal;
+
+  color: var(--contacts-footer-colors);
+
+  transition-property: color;
+  transition-duration: var(--anim-time);
+  transition-timing-function: var(--anim-ft);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link--white {
+  color: var(--basic-white-color);
+}
