@@ -1,5 +1,9 @@
 .section {
   @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .section--not-padding {
@@ -11,5 +15,9 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }

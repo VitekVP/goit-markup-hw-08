@@ -24,10 +24,10 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__container container">
         <!-- prettier-ignore -->
-        <a href="" lang="en" class="logo header__logo">Web<span class="logo__part logo__part--dark">Studio</span></a>
+    <!-- <a href="" lang="en" class="logo header__logo">Web<span class="logo__part logo__part--dark">Studio</span></a>
         <nav class="header__nav">
           <ul class="list nav-list">
             <li class="nav-list__item">
@@ -54,13 +54,14 @@
           </a>
         </div>
       </div>
-    </header>
+    </header> -->
+    -->
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <h1 class="hero__heading">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button hero__button" data-modal-open>Замовити послугу</button>
-      </section>
+      </section> -->
       <!-- Особливості роботи -->
       <section class="section">
         <div class="container">
@@ -74,10 +75,12 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="feature-list__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
+              <div class="feature-list__content">
+                <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="feature-list__text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
+              </div>
             </li>
             <li class="feature-list__item">
               <div class="feature-list__image">
@@ -85,10 +88,12 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="feature-list__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
+              <div class="feature-list__content">
+                <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="feature-list__text">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
+              </div>
             </li>
             <li class="feature-list__item">
               <div class="feature-list__image">
@@ -96,10 +101,12 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
-              <p class="feature-list__text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
+              <div class="feature-list__content">
+                <h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
+                <p class="feature-list__text">
+                  Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+              </div>
             </li>
             <li class="feature-list__item">
               <div class="feature-list__image">
@@ -107,16 +114,18 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="feature-list__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
+              <div class="feature-list__content">
+                <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="feature-list__text">
+                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- Зміст роботи -->
-      <section class="section section--not-padding">
+      <section class="work section section--not-padding">
         <div class="container">
           <h2 class="title section__title">Чим ми займаємося</h2>
           <ul class="list work-list">
@@ -503,88 +512,90 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <!-- prettier-ignore -->
-          <a href="" lang="en" class="logo footer__logo">Web<span class="logo__part logo__part--light">Studio</span></a>
-          <address>
-            <ul class="address__list list">
-              <li class="address__item">
+        <div class="footer__group">
+          <div class="footer__address">
+            <!-- prettier-ignore -->
+            <a href="" lang="en" class="logo footer__logo">Web<span class="logo__part logo__part--light">Studio</span></a>
+            <address>
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/GXKJQdvFJzr9G8gM8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link address__link address__link--white"
+                  >
+                    м. Київ, б-р Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="link address__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="link address__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__socials">
+            <h3 class="footer__title">приєднуйтесь</h3>
+            <ul class="socials list">
+              <li class="socials__item">
                 <a
-                  href="https://goo.gl/maps/GXKJQdvFJzr9G8gM8"
+                  class="socials__link socials__link--dark link"
+                  href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="link address__link address__link--white"
+                  aria-label="Іконка інстаграм"
                 >
-                  м. Київ, б-р Лесі Українки, 26
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="link address__link"
-                  >info@devstudio.com</a
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Іконка твітер"
                 >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="link address__link">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Іконка фейсбук"
+                >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Іконка лінкедін"
+                >
+                  <svg class="socials__icon socials__icon--white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__socials">
-          <h3 class="footer__title">приєднуйтесь</h3>
-          <ul class="socials list">
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                aria-label="Іконка інстаграм"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                aria-label="Іконка твітер"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                aria-label="Іконка фейсбук"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                aria-label="Іконка лінкедін"
-              >
-                <svg class="socials__icon socials__icon--white" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__subscription">
           <h3 class="footer__title">Підпишіться на розсилку</h3>

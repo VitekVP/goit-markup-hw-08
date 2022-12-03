@@ -1,3 +1,9 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
