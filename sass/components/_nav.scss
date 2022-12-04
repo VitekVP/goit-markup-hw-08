@@ -1,3 +1,9 @@
+.header__nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .nav-list__link {
   position: relative;
 
@@ -19,8 +25,10 @@
 }
 
 .nav-list__link {
-  padding-top: 32px;
-  padding-bottom: 31px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
 }
 
 .nav-list__link--current {

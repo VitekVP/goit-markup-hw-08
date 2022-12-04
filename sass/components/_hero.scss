@@ -1,29 +1,70 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
+  max-width: 480px;
+  height: 400px;
+  padding: 118px 0;
   margin: 0 auto;
 
   text-align: center;
 
   background-color: var(--hero-bgc);
-  background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
-    url(../images/img-bgi.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+    url(../images/hero-bgi/img_s@1x.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+      url(../images/hero-bgi/img_s@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+      url(../images/hero-bgi/img_m@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+        url(../images/hero-bgi/img_m@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+      url(../images/hero-bgi/img_l@1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+        url(../images/hero-bgi/img_l@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
+
 .hero__heading {
-  width: 696px;
+  width: 360px;
   margin: 0 auto 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--basic-white-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__button {
