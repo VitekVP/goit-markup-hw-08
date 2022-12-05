@@ -4,8 +4,19 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+
+  --items: 2;
+
+  @media screen and (min-width: 768px) {
+    --items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
 }
 .clients-list__item {
+  flex-basis: calc((100% - (var(--items) - 1) * var(--indent))) / var(--items);
   width: 210px;
   height: 92px;
 
