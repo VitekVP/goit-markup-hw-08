@@ -182,6 +182,18 @@ img {
 .header__contacts:hover, .header__contacts:focus {
   color: var(--color-accent);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__contacts {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
+}
 
 .header__icon-contacts {
   fill: currentColor;
@@ -212,8 +224,6 @@ img {
     padding-top: 20px;
     padding-bottom: 19px;
     margin-left: auto;
-    font-size: 12px;
-    line-height: 1.1666666667;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -232,13 +242,6 @@ img {
     margin-left: auto;
     font-size: 14px;
     line-height: 1.1428571429;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__contacts {
-    padding-top: 32px;
-    padding-bottom: 31px;
   }
 }
 
@@ -379,7 +382,7 @@ img {
 }
 
 .hero__heading {
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
@@ -390,7 +393,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__heading {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -584,6 +587,7 @@ img {
 .team-card__caption {
   padding: 30px 0 24px;
   text-align: center;
+  background-color: var(--basic-white-color);
 }
 @media screen and (min-width: 1200px) {
   .team-card__caption {
@@ -915,7 +919,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 0 0 0 16px;
   margin-bottom: 20px;
@@ -939,6 +943,11 @@ img {
 }
 .subscription__field:focus {
   border: 1px solid var(--color-accent);
+}
+@media screen and (min-width: 768px) {
+  .subscription__field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__field {
