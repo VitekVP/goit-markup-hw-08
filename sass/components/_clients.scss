@@ -1,9 +1,8 @@
 .clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include grid;
+
+  // justify-content: center;
+  // align-items: center;
 
   --items: 2;
 
@@ -16,17 +15,9 @@
   }
 }
 .clients-list__item {
-  flex-basis: calc((100% - (var(--items) - 1) * var(--indent))) / var(--items);
-  width: 210px;
+  @include items-grid;
+
   height: 92px;
-
-  @media screen and (min-width: 768px) {
-    width: 226px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
 }
 
 .clients-list__link {

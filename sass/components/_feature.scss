@@ -1,8 +1,7 @@
 .feature-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @include grid;
+
+  // justify-content: center;
 
   --items: 1;
 
@@ -10,23 +9,13 @@
     --items: 2;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     --items: 4;
   }
 }
 
 .feature-list__item {
-  flex-basis: calc((100% - (var(--items) - 1) * var(--indent))) / var(--items);
-
-  width: 450px;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
+  @include items-grid;
 }
 
 .feature-list__title {

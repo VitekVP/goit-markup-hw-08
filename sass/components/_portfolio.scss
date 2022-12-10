@@ -1,14 +1,19 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @include grid;
 
-  --items: 3;
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
 }
 
 .portfolio-list__item {
-  max-height: 404px;
-  flex-basis: calc((100% - (var(--items) - 1) * var(--indent))) / var(--items);
+  @include items-grid;
 
   transition-property: box-shadow;
   transition-duration: var(--anim-time);

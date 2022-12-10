@@ -5,16 +5,15 @@
 }
 
 .work-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+  @include grid;
+
   --items: 3;
 }
 
 .work-list__item {
   position: relative;
 
-  flex-basis: calc((100% - (var(--items) - 1) * var(--indent))) / var(--items);
+  @include items-grid;
 }
 
 .work-list__overlay {

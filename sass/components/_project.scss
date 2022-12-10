@@ -1,3 +1,10 @@
+.project {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
 .project__title {
   margin-bottom: 4px;
 
@@ -10,7 +17,8 @@
 }
 
 .project__name {
-  width: 370px;
+  flex-grow: 1;
+  width: 100%;
   padding: 20px 24px 19px;
 
   border-right: 1px solid #eeeeee;
@@ -43,7 +51,7 @@
 
   background: #2196f3e6;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-property: transform;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);

@@ -2,3 +2,13 @@
   padding-top: $pt;
   padding-bottom: $pb;
 }
+
+@mixin grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+@mixin items-grid {
+  flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
+}
